@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.container {
+    max-height: 100vh;
+    width: 100%;
+	overflow-y: scroll;
+	border: 1px solid gray;
+	scroll-snap-type: y mandatory;
+}
+
+ul{
+	margin: 0;
+	padding-left: 0;
+}
+
+li {
+    height: 190vh;
+	border-bottom: 1px solid white;
+	padding: 3rem;
+	font-size: 1.4rem;
+	color: rgba(white, .5);
+	background: lightgray;
+	text-align: center;
+	scroll-snap-align: start;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+li:nth-child(odd){
+	background-color: darkorange;
+}
+
+li:nth-child(even){
+	background-color: deeppink;
+}
